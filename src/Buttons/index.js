@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks, toggleHideDoneTasks }) => {
+const Buttons = ({ tasks, hideDoneTasks, toggleHideDoneTasks, setAllTasksDone }) => {
     if (tasks.length === 0) {
         return null;
     }
@@ -10,13 +10,16 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDoneTasks }) => {
             <button onClick={toggleHideDoneTasks} className="buttons__button">
                 {hideDoneTasks ? "Pokaż" : "Ukryj"} zakończone
             </button>
-            <button 
-                className="buttons__button" 
+            <button
+                className="buttons__button"
                 disabled={tasks.every(({ done }) => done)}
-                >Ukończ wszystkie
+                onClick={setAllTasksDone}
+            >
+                Ukończ wszystkie
             </button>
             <button className="buttons__button"
-                >Usuń wszystkie
+            >
+                Usuń wszystkie
             </button>
         </div>
     )
