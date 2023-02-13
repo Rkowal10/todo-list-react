@@ -49,6 +49,12 @@ function App() {
     ]);
   };
 
+  const removeAllTasks = () => {
+    setTasks(tasks => [
+      ...tasks.slice(tasks.length),
+    ]);
+  };
+
   return (
     <>
       <Header title="Lista zadań" />
@@ -72,6 +78,7 @@ function App() {
             hideDoneTasks={hideDoneTasks}
             toggleHideDoneTasks={toggleHideDoneTasks}
             setAllTasksDone={setAllTasksDone}
+            removeAllTasks={removeAllTasks}
           />
         }
       />
