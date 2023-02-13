@@ -22,7 +22,7 @@ const Form = ({ addNewTask }) => {
         className="form__input"
         placeholder="Co masz do zrobienia?"
         autoFocus={true}
-
+        required
       />
       <button className="form__button"
       >
