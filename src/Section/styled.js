@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Unit = styled.section`
-    border: 1px solid #bdbcbc;
+    border: 1px solid ${({ theme }) => theme.color.silver};
     margin: 10px auto;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     max-width: 800px;
     padding: 20px;
 `;
@@ -12,9 +12,9 @@ export const Header = styled.header`
     display: grid;   
     grid-template-columns: 1fr auto;
     margin: 10px auto;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
     max-width: 800px;
-    border-bottom: 2px solid #bdbcbc;
+    border-bottom: 2px solid ${({ theme }) => theme.color.silver};
 `;
 
 export const Title = styled.h2`
@@ -24,7 +24,7 @@ export const Title = styled.h2`
     margin-bottom: 0;
     padding: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;

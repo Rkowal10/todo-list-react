@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 1px solid #bdbcbc;
+    border-bottom: 1px solid ${({ theme }) => theme.color.silver};
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -35,18 +35,18 @@ export const Button = styled.button`
     transition: 1s;
 
     ${({ done }) => done && css`
-        background-color: hsl(120, 100%, 25%);
+        background-color: ${({ theme }) => theme.color.japaneseLaurel};
 
         &:hover {
-            background-color: hsl(120, 100%, 35%);
+            background-color: ${({ theme }) => theme.color.green};
         }
     `}
 
     ${({ remove }) => remove && css`
-        background-color: hsl(0, 100%, 50%);
+        background-color: ${({ theme }) => theme.color.red};
 
         &:hover {
-            background-color: hsl(0, 100%, 65%);
+            background-color: ${({ theme }) => theme.color.sunsetOrange};
         }
     `}
 `;
