@@ -10,6 +10,7 @@ export const theme = {
         bondiBlue: "#00b3b3",
         gray: "#808080",
         black: "#000000",
+        alto: "#dbdada",
     },
     breakpoint: {
         mobile: 767,
