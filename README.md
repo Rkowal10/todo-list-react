@@ -15,8 +15,9 @@ That application allow you to create To-Do List. You can enter the tasks you nee
 - CSS Grid
 - CSS Flex
 - Media queries
-- BEM
-- [Create React App](https://github.com/facebook/create-react-app).
+- [Create React App](https://github.com/facebook/create-react-app)
+- React Hooks: useState, useEffect, useRef and Custom Hooks
+- Styled Components.
 
 ## Available Scripts
 
