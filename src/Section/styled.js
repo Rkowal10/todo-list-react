@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Unit = styled.section`
+export const StyledSection = styled.section`
     border: 1px solid ${({ theme }) => theme.color.silver};
     margin: 10px auto;
     background-color: ${({ theme }) => theme.color.white};
