@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.div`
+export const StyledButtons = styled.div`
     display: flex;
     flex-wrap: wrap; 
 
@@ -10,7 +10,7 @@ export const Button = styled.div`
     }
 `;
 
-export const FunctionButton = styled.button`
+export const Button = styled.button`
     margin-top: 0;
     padding: 10px;
     border: none;
