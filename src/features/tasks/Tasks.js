@@ -5,14 +5,19 @@ import Buttons from './Buttons';
 import Section from '../../common/Section';
 import Header from '../../common/Header';
 import { useTasks } from '../../useTasks';
+import { selectTasks } from './tasksSlice';
+import { useSelector } from 'react-redux';
 
 function Tasks() {
+
+  const { tasks } = useSelector(selectTasks);
+
   const {
-    tasks,
-    hideDoneTasks,
-    toggleHideDoneTasks,
+    //tasks,
+    //hideDoneTasks,
+    //toggleHideDoneTasks,
     removeTask,
-    toggleTaskDone,
+    //toggleTaskDone,
     setAllTasksDone,
     addNewTask,
     removeAllTasks,
@@ -29,17 +34,11 @@ function Tasks() {
         title="Lista zadań"
         body={
           <TaskList
-            tasks={tasks}
-            hideDoneTasks={hideDoneTasks}
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
           <Buttons
-            tasks={tasks}
-            hideDoneTasks={hideDoneTasks}
-            toggleHideDoneTasks={toggleHideDoneTasks}
             setAllTasksDone={setAllTasksDone}
             removeAllTasks={removeAllTasks}
           />
