@@ -1,4 +1,4 @@
-# To-Do List
+ # To-Do List
 ![List](https://github.com/Rkowal10/todo-list-react/blob/main/public/To-Do%20List2.png)
 
 ## Demo
@@ -16,8 +16,10 @@ That application allow you to create To-Do List. You can enter the tasks you nee
 - CSS Flex
 - Media queries
 - [Create React App](https://github.com/facebook/create-react-app)
-- React Hooks: useState, useEffect, useRef and Custom Hooks
-- Styled Components.
+- React Hooks: useState, useEffect, useRef and Custom Hooks (before Redux)
+- Styled Components
+- Redux
+- Redux Toolkit.
 
 ## Available Scripts
 
