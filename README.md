@@ -19,7 +19,8 @@ That application allow you to create To-Do List. You can enter the tasks you nee
 - React Hooks: useState, useEffect, useRef and Custom Hooks (before Redux)
 - Styled Components
 - Redux
-- Redux Toolkit.
+- Redux Toolkit
+- Redux Saga.
 
 ## Available Scripts
 
