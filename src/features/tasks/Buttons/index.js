@@ -4,7 +4,6 @@ import {
     toggleHideDoneTasks,
     setAllTaskDone,
     removeAllTasks,
-    fetchExampleTasks,
     selectAreTasksEmpty,
     selectIsEveryTaskDone,
     selectHideDone,
