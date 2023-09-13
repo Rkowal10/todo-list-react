@@ -18,13 +18,6 @@ const Buttons = () => {
 
     return (
         <StyledButtons>
-            {areTasksEmpty && (
-                <>
-                    <Button onClick={() => dispatch(fetchExampleTasks())}>
-                        Pobierz przykładowe zadania
-                    </Button>
-                </>
-            )}
             {!areTasksEmpty && (
                 <>
                     <Button
