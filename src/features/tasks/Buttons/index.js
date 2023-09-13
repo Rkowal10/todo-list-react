@@ -24,7 +24,7 @@ const Buttons = () => {
                         Pobierz przykładowe zadania
                     </Button>
                 </>
-            )};
+            )}
             {!areTasksEmpty && (
                 <>
                     <Button
