@@ -1,5 +1,6 @@
 import { Link, Switch, Route, HashRouter, Redirect } from "react-router-dom/cjs/react-router-dom";
-import Tasks from "./features/tasks/TasksPage";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
 import Author from "./features/author/Author";
 
 export default () => (
@@ -14,8 +15,11 @@ export default () => (
                 </li>
             </ul>
             <Switch>
+                <Route path="/zadania/:id">
+                    <TaskPage />
+                </Route>
                 <Route path="/zadania">
-                    <Tasks />
+                    <TasksPage />
                 </Route>
                 <Route path="/autor">
                     <Author />
