@@ -1,12 +1,12 @@
 import React from 'react';
-import Form from './Form';
-import TaskList from './TaskList';
-import Buttons from './Buttons';
-import Section from '../../common/Section';
-import Header from '../../common/Header';
-import ExampleButton from './ExampleButton';
+import Form from '../TasksPage/Form';
+import TaskList from '../TasksPage/TaskList';
+import Buttons from '../TasksPage/Buttons';
+import Section from '../../../common/Section';
+import Header from '../../../common/Header';
+import ExampleButton from '../TasksPage/ExampleButton';
 
-function Tasks() {
+function TasksPage() {
   return (
     <>
       <Header title="Lista zadań" />
@@ -24,4 +24,4 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;
