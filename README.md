@@ -5,7 +5,7 @@
 Here you can check my app [To-Do List](https://rkowal10.github.io/todo-list-react/).
 
 ## Description
-That application allow you to create To-Do List. You can enter the tasks you need to complete and when you finish press the green button to know it's done. After that you can remove completed tasks by press red button. Also you can finish all tasks by one click... to do it you have to press button "Ukończ wszystkie". To hide and show completed tasks you should use button "Ukryj/Pokaż zakończone".
+That application allows you to create To-Do List. You can enter the tasks you need to complete and when you finish press the green button to know it's done. After that you can remove completed task by press red button. Also you can finish or remove all tasks by one click... to do it you have to press one of the buttons "Ukończ wszystkie" or "Usuń wszystkie". To hide and show completed tasks you should use button "Ukryj/Pokaż zakończone". Application has a new function that allows you to download expample tasks.
 
 ![animation](https://github.com/Rkowal10/todo-list-react/blob/main/pictures/Animation2.gif)
 
