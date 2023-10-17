@@ -10,7 +10,7 @@ function* fetchExampleTasksHandler() {
         yield put(fetchExampleTasksSuccess(exampleTasks));
     } catch (error) {
         yield put(fetchExampleTasksError());
-        yield call(alert, "Coś poszło nie tak!!!");
+        yield call(alert, "Nie udało się pobrać zadań 😟");
     }
 }
 
