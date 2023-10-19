@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${({ theme }) => theme.color.alto};
         padding: 0px;
 
-        @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
             padding: 10px;
             padding-top: 0px;
         }

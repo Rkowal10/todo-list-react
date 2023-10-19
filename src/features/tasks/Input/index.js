@@ -7,4 +7,8 @@ export default styled.input`
     &:hover {
         border: 1px solid ${({ theme }) => theme.color.black};
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        max-width: 90%; 
+    }
 `;

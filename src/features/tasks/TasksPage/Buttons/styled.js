@@ -4,7 +4,7 @@ export const StyledButtons = styled.div`
     display: flex;
     flex-wrap: wrap; 
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
             flex-direction: column;
             justify-content: center;
     }

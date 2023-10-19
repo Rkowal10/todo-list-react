@@ -13,6 +13,7 @@ export const theme = {
         alto: "#dbdada",
     },
     breakpoint: {
-        mobile: 767,
+        tablet: 767,
+        mobile: 320,
     },
 };

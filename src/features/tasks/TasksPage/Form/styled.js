@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     gap: 20px;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
             grid-template-columns: 1fr;
     }
 `;
@@ -21,5 +21,9 @@ export const Button = styled.button`
     &:hover {
         background-color: ${({ theme }) => theme.color.bondiBlue};
         transform: scale(1.15);
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+        max-width: 90%;
     }
 `;
