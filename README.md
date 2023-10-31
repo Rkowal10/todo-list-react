@@ -20,7 +20,8 @@ That application allows you to create To-Do List. You can enter the tasks you ne
 - Styled Components
 - Redux
 - Redux Toolkit
-- Redux Saga.
+- Redux Saga
+- React Router.
 
 ## Available Scripts
 
