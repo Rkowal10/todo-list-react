@@ -11,13 +11,13 @@ export const StyledNavLink = styled(NavLink)`
     }
 
     &.active {
-        font-weight: 700;
+        font-weight: 800;
     }
 `;
 
 export const List = styled.ul`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
     background-color: ${({ theme }) => theme.color.teal};
