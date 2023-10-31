@@ -3,6 +3,7 @@ import { List, Item, Content, Button, StyledLink } from "./styled";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../useQueryParameter";
+import { toTask } from "../../../../routes";
 
 const TaskList = () => {
     const query = useQueryParameter(searchQueryParamName);
@@ -24,7 +25,9 @@ const TaskList = () => {
                         {task.done ? "✔️" : ""}
                     </Button>
                     <Content done={task.done}>
-                        <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+                        <StyledLink to={toTask({ id: task.id })}>
+                            {task.content}
+                        </StyledLink>
                     </Content>
                     <Button
                         remove
